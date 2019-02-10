@@ -8,7 +8,7 @@ string randDNA (int seed, string bases, int n) {
 		return "";
 		
 	mt19937 random(seed);	
-  	uniform_int_distribution<> distro(0, bases.length()-1);
+  	uniform_int_distribution<unsigned int> distro(0, bases.length()-1);
 	string dna = "";
 	
 	for(int i = 0; i < n; i++)
